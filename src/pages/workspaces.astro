@@ -1,0 +1,197 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <Navbar />
+
+    <video autoplay loop class="absolute z-10 w-full h-[813px] object-cover opacity-85  ">
+      <source src="/video/backgroun work.mp4">
+    </video>
+    <div id="hero" class=" px-12 py-[39px] relative z-20">
+      <div>
+        
+        <div class="p-[175px]">
+          <h1 class="text-[96px] font-extrabold text-[#F9F9F9] text-center ">
+            WORKSPACES  </h1>
+
+          <p class="text-[20px] font-normal font-[#171717] text-center text-[#F9F9F9] ">
+            Hi my name is zidane thanks for visiting my workspace site so <br
+            /> i hope you all enjoy my workspace <br>
+             and a lot thinks in this site <br/>
+          </p>
+        </div>
+        <img src="/img/retangle_atas.png" alt="" class="py-[35.73px]" />
+      </div>
+ 
+    
+    </div>
+
+    <div id="skills" class="">
+      <h1 class="text-[40px] font-extrabold text-[#2F1C73] text-center px-60 pt-40">choose a portofolio to  give me <br>
+        point</h1>
+      <p class="text-center  text-[24px] text-[#402D6D] font-semibold opacity-[47%]">take a look for inspired you or to make me be a your worker <br>
+        when you interested whit my work you may call me </p>
+
+    <div class="flex justify-center items-center pt-10 pb-10">
+        <div class="nav text-[20px] font-semibold" id="buttons">
+            <button class="nav-item active border-b-2" data-section="programming">Programing</button>
+            <button class="nav-item border-b-2" data-section="photography">Photography</button>
+            <button class="nav-item border-b-2" data-section="videography">Videography</button>
+            <button class="nav-item border-b-2" data-section="adobe">Adobe</button>
+            <button class="nav-item border-b-2" data-section="webdesign">Web Design</button>
+            <button class="nav-item border-b-2" data-section="3d">3D Design</button>
+          </div>
+
+          <style>
+            .nav-item {
+              @apply text-[#8E8E8E] hover:text-[#2F1C73] px-4 py-2;
+            }
+          
+            .active {
+              @apply text-[#2F1C73] border-b-2 border-[#2F1C73];
+            }
+          </style>
+    </div>
+          
+    <!-- Sections -->
+    <div id="programming" class="section mt-10">
+      <section id="work" class="pb-10">
+          <div class="container mx-auto">
+              <h2 class="text-4xl font-bold text-center text-gray-800">My Work</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-[57px] mt-8">
+                  <!-- Project 1 -->
+                  <button>
+                  <div class="bg-white shadow-[0px_0px_35px_-15px_rgba(0,0,0,0.3)] rounded-[15px] overflow-hidden">
+                      <img src="/img/tugas-1.png" alt="Project 1" class="w-full h-[200px] object-cover">
+                      <div class="p-6">
+                          <h3 class="text-2xl font-bold">Project Title 1</h3>
+                          <p class="mt-2 text-gray-600">Brief description of the project. What technologies were used and the purpose of the project.</p>
+                      </div>
+                  </div>
+                  </button>
+                  <!-- Project 2 -->
+                   <button>
+                  <div class="bg-white shadow-[0px_0px_35px_-15px_rgba(0,0,0,0.3)] rounded-[15px] overflow-hidden ">
+                      <img src="/img/tugas-2.png" alt="Project 2" class="w-full h-[200px] object-cover">
+                      <div class="p-6">
+                          <h3 class="text-2xl font-bold">Project Title 2</h3>
+                          <p class="mt-2 text-gray-600">Brief description of the project. What technologies were used and the purpose of the project.</p>
+                      </div>
+                  </div>
+                   </button>
+                  <!-- Project 3 -->
+                   <button>
+                  <div class="bg-white shadow-[0px_0px_35px_-15px_rgba(0,0,0,0.3)] rounded-[15px] overflow-hidden ">
+                      <img src="/img/tugas-3.png" alt="Project 3" class="w-full h-[200px] object-cover">
+                      <div class="p-6">
+                          <h3 class="text-2xl font-bold">Project Title 3</h3>
+                          <p class="mt-2 text-gray-600">Brief description of the project. What technologies were used and the purpose of the project.</p>
+                      </div>
+                  </div>
+                   </button>
+                  <!-- Project 4 -->
+                   <button>
+                  <div class="bg-white shadow-[0px_0px_35px_-15px_rgba(0,0,0,0.3)] rounded-[15px] overflow-hidden ">
+                    <img src="/img/tugas-4.png" alt="Project 3" class="w-full h-[200px] object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold">Project Title 3</h3>
+                        <p class="mt-2 text-gray-600">Brief description of the project. What technologies were used and the purpose of the project.</p>
+                    </div>
+                  </div>
+                   </button>
+                  <!-- Project 5 -->
+                   <button>
+                  <div class="bg-white shadow-[0px_0px_35px_-15px_rgba(0,0,0,0.3)] rounded-[15px] overflow-hidden ">
+                    <img src="/img/tugas-5.png" alt="Project 3" class="w-full h-[200px] object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold">Project Title 3</h3>
+                        <p class="mt-2 text-gray-600">Brief description of the project. What technologies were used and the purpose of the project.</p>
+                    </div>
+                  </div>
+                   </button>
+                  <!-- Project 6 -->
+                   <button>
+                  <div class="bg-white shadow-[0px_0px_35px_-15px_rgba(0,0,0,0.3)] rounded-[15px] overflow-hidden ">
+                    <img src="/img/tugas-6.jpeg" alt="Project 3" class="w-full h-[200px] object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold">Project Title 3</h3>
+                        <p class="mt-2 text-gray-600">Brief description of the project. What technologies were used and the purpose of the project.</p>
+                    </div>
+                  </div>
+                   </button>
+                  <!-- Project 7 -->
+                   <button>
+                  <div class="bg-white shadow-[0px_0px_35px_-15px_rgba(0,0,0,0.3)] rounded-lg overflow-hidden">
+                   <img src="/img/tugas-7.png" alt="Project 3" class="w-full h-[200px] object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold">Project Title 3</h3>
+                        <p class="mt-2 text-gray-600">Brief description of the project. What technologies were used and the purpose of the project.</p>
+                    </div>
+                  </div>
+                   </button>
+              </div>
+          </div>
+      </section>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <Footer />
+    <script>
+        const buttons = document.querySelectorAll("#buttons button");
+
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                buttons.forEach((btn) => btn.classList.remove("active"))
+                btn.classList.add("active")
+            })
+        })
+
+
+        const section = document.querySelectorAll("#buttons > button") as NodeListOf<HTMLButtonElement>
+        section.forEach(btn => {
+          btn.addEventListener("click", () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(s => s.classList.add('hidden'));
+            console.log(btn);
+            document.querySelector(`#${btn.dataset.section}`).classList.remove('hidden');
+          })
+        })
+
+        function showSection(section) {
+          console.log(section);
+          
+      }
+    </script>
+  </body>
+</html>

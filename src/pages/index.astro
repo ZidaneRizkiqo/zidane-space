@@ -1,0 +1,783 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+ <style>
+      /* Styling untuk efek hover */
+      .card:hover {
+      transform: translateY(-28px);
+      transition: transform 0.7s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat hover */
+  }
+
+  .icon-active path {
+      fill: rgb(255, 255, 255);
+  }
+  
+  
+  .icon-default path {
+      fill: black;
+  }
+  
+  .masonry {
+      column-count: 4; /* Changed to 4 columns */
+      column-gap: 26px; /* Space between columns */
+  }
+
+  .masonry-item {
+      break-inside: avoid; /* Prevent items from breaking inside the column */
+      margin-bottom: 26px; /* Space between rows */
+      transition: transform 0.2s; /* Transisi saat hover */
+  }
+
+  .masonry-item:hover {
+      transform: scale(1.05); /* Skala gambar saat hover */
+  }
+
+  /* Animasi untuk tombol */
+  .button-animation {
+      transition: background-color 0.5s ease, transform 0.5s ease; /* Transisi untuk perubahan latar belakang */
+  }
+
+  .button-animation:active {
+      transform: scale(0.95); /* Efek mengecil saat diklik */
+  }
+
+  @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px); /* Bergeser sedikit ke bawah */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in-animation {
+        animation: fadeIn 0.5s ease-in-out forwards; /* Menggunakan animasi fadeIn */
+    }
+
+    /* Transisi gambar saat hover */
+    .project-image:hover {
+        transform: scale(1.05); /* Efek membesar saat di-hover */
+        transition: transform 0.3s ease; /* Transisi halus */
+    }
+  
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-[#FBFBFB]">
+    <Navbar />
+    <section id="click-about" class=" flex items-center justify-center mt-[227px]">
+       <!-- Card Section -->
+    <div class="cursor-pointer ">
+      <div class="card flex flex-row gap-[170px]  bg-white shadow-lg rounded-[57px] overflow-hidden  w-full" >
+          <!-- Left Section (Text) -->
+          <div class="flex-1 font-['Aboreto'] px-10 py-5 pt-40">
+              <h1 class=" font-bold text-[48px]">HOLLA, AMIGOS</h1>
+              <p class="mt-4 text-lg">WELCOME TO MY WORKSPACES</p>
+              <p class="mt-4 text-lg font-semibold">HAVE FUN</p>
+          </div>
+          <!-- Right Section (Image) -->
+          <div class="flex-1">
+              <img src="/img/luffy.png" alt="Workspace Image" class="py-5 px-5  object-cover">
+          </div>
+      </div>
+  </div>
+    </section>
+
+    <section class=" flex items-center justify-center mt-10 mb-10 ">
+      <div class="flex space-x-8">
+
+        <!-- Programming Card -->
+        <div id="programmingButton" class="card bg-white shadow-lg rounded-t-[57px] rounded-bl-[57px] p-8 cursor-pointer items-center justify-center flex w-[490px] h-[480px] button-animation">
+            <div class="text-6xl mb-4">
+              <svg width="146" height="161" viewBox="0 0 146 161"  xmlns="http://www.w3.org/2000/svg" id="programmingIcon" class="prog">
+                <path d="M92.0256 95.5938L80.2087 108.625L86.6875 115.719L104.938 95.5938L86.6875 75.4688L80.2087 82.5628L92.0256 95.5938ZM53.9744 95.5938L65.7913 82.5628L59.3125 75.4688L41.0625 95.5938L59.3125 115.719L65.7913 108.625L53.9744 95.5938Z" fill="#4E4C49"/>
+                <path d="M41.0625 45.2812C43.5823 45.2812 45.625 43.0287 45.625 40.25C45.625 37.4713 43.5823 35.2188 41.0625 35.2188C38.5427 35.2188 36.5 37.4713 36.5 40.25C36.5 43.0287 38.5427 45.2812 41.0625 45.2812Z" fill="#4E4C49"/>
+                <path d="M27.375 45.2812C29.8948 45.2812 31.9375 43.0287 31.9375 40.25C31.9375 37.4713 29.8948 35.2188 27.375 35.2188C24.8552 35.2188 22.8125 37.4713 22.8125 40.25C22.8125 43.0287 24.8552 45.2812 27.375 45.2812Z" fill="#4E4C49"/>
+                <path d="M127.75 20.125H18.25C13.2176 20.125 9.125 24.6431 9.125 30.1875V130.812C9.125 136.362 13.2176 140.875 18.25 140.875H127.75C132.782 140.875 136.875 136.362 136.875 130.812V30.1875C136.875 24.6431 132.782 20.125 127.75 20.125ZM127.75 30.1875V50.3125H18.25V30.1875H127.75ZM18.25 130.812V60.375H127.75V130.812H18.25Z" fill="#4E4C49"/>
+                </svg>
+                
+            
+            </div>
+            <p id="programming-text" class="text-lg font-semibold font-['Aboreto']">programming</p>
+        </div>
+
+        <!-- Multimedia Card -->
+        <div id="multimediaButton" class="card bg-white shadow-lg rounded-t-[57px] rounded-br-[57px] p-8 cursor-pointer items-center justify-center flex w-[490px] h-[480px] button-animation">
+            <div class="text-6xl mb-4">
+              <svg width="146" height="147" viewBox="0 0 146 147"  xmlns="http://www.w3.org/2000/svg" id="multimediaIcon" class="mulmet">
+                <path d="M33.9596 21.4394C34.5961 21.7714 35.1297 22.2731 35.5021 22.8898C35.8745 23.5064 36.0715 24.2142 36.0714 24.9359C36.0714 31.0784 38.1728 34.6379 40.5922 38.1607C40.8216 38.4967 41.0615 38.8397 41.3118 39.1897C43.6217 42.4867 46.5 46.5817 46.5 52.4984C46.5 54.9115 46.028 57.3009 45.1108 59.5302C44.1937 61.7596 42.8494 63.7852 41.1547 65.4915C39.46 67.1978 37.4482 68.5513 35.234 69.4747C33.0198 70.3981 30.6466 70.8734 28.25 70.8734C25.8534 70.8734 23.4802 70.3981 21.266 69.4747C19.0518 68.5513 17.04 67.1978 15.3453 65.4915C13.6506 63.7852 12.3063 61.7596 11.3892 59.5302C10.472 57.3009 10 54.9115 10 52.4984C10 48.1777 10.438 43.4684 13.3841 38.2184C16.2624 33.0892 21.3411 27.7919 29.9134 21.7177C30.4981 21.3033 31.1845 21.0582 31.8979 21.0092C32.6113 20.9601 33.3244 21.1089 33.9596 21.4394ZM47.6576 39.2369C52.1931 36.2572 57.4192 34.5139 62.8245 34.1776C68.2299 33.8413 73.6294 34.9235 78.4947 37.3184C83.3601 39.7132 87.5247 43.3387 90.5811 47.8401C93.6376 52.3414 95.4811 57.5646 95.9314 62.9984H81.7016C76.5157 62.9984 71.5422 65.0726 67.8752 68.7648C64.2082 72.4569 62.1481 77.4645 62.1481 82.6859V97.0184C58.5168 96.7132 54.9664 95.7715 51.6569 94.2359C51.5735 96.8032 51.3962 99.6067 51.1355 102.547C54.674 103.865 58.3833 104.661 62.1481 104.909V116.811C62.1481 122.032 64.2082 127.04 67.8752 130.732C71.5422 134.424 76.5157 136.498 81.7016 136.498H115.594C120.78 136.498 125.754 134.424 129.421 130.732C133.088 127.04 135.148 122.032 135.148 116.811V82.6859C135.148 77.4645 133.088 72.4569 129.421 68.7648C125.754 65.0726 120.78 62.9984 115.594 62.9984H103.779C103.324 56.133 101.091 49.5073 97.301 43.7816C93.5111 38.0559 88.2972 33.4301 82.1788 30.365C76.0604 27.3 69.251 25.9028 62.4293 26.3126C55.6075 26.7224 49.0115 28.9249 43.2984 32.7007C43.7677 33.5092 44.2996 34.3177 44.8888 35.1734C45.0869 35.4709 45.3129 35.7929 45.5666 36.1394C46.1819 37.0109 46.9171 38.0399 47.6576 39.2369ZM115.6 70.8734C118.711 70.8734 121.695 72.118 123.896 74.3332C126.096 76.5485 127.332 79.5531 127.332 82.6859V116.811C127.332 119.944 126.096 122.948 123.896 125.164C121.695 127.379 118.711 128.623 115.6 128.623H81.7069C78.5953 128.623 75.6112 127.379 73.411 125.164C71.2108 122.948 69.9747 119.944 69.9747 116.811V104.652C78.4685 103.498 86.3509 99.5674 92.4108 93.465C98.4708 87.3625 102.373 79.4255 103.518 70.8734H115.6ZM69.9747 96.6877V82.6859C69.9747 79.5531 71.2108 76.5485 73.411 74.3332C75.6112 72.118 78.5953 70.8734 81.7069 70.8734H95.6081C94.5224 77.3225 91.4713 83.272 86.8775 87.8972C82.2837 92.5225 76.38 95.5945 69.9747 96.6877ZM10 90.7552C10 85.4894 10.4171 78.9532 12.6906 73.5667C17.0341 76.8217 22.4204 78.7484 28.25 78.7484C33.8608 78.7568 39.3233 76.9351 43.8199 73.5562C46.0881 78.9479 46.5 85.4947 46.5 90.7552C46.5 99.4859 45.1234 112.858 42.5997 124.093C41.3483 129.7 39.7527 135.007 37.7869 139.003C36.8119 140.998 35.6386 142.872 34.2047 144.305C32.7604 145.744 30.7633 146.998 28.2604 146.998C25.7576 146.998 23.7657 145.744 22.3214 144.3C20.8874 142.872 19.7142 140.998 18.7339 139.008C16.7681 135.007 15.1726 129.7 13.9107 124.098C11.3818 112.858 10 99.4859 10 90.7604"/>
+                </svg>                
+            </div>
+            <p id="multimedia-text" class="text-lg font-semibold font-['Aboreto']">multimedia</p>
+        </div>
+
+
+    </div>
+    </section>
+    <div id="isi-programming" class="bg-white rounded-t-[57px] w-[1332px] h-[1155px] mx-auto shadow-lg p-8 hidden fade-in-animation font-['Aboreto']">
+      <!-- Grid Container -->
+      <div class="grid grid-cols-3 gap-10 relative">
+          <!-- Project 1 -->
+          <div class="m-10 project-card relative" id="project-1">
+              <img src="/img/project-1.png" class="w-[366.21px] h-[350px] rounded-[57px] shadow-lg project-image" alt="Project 1">
+              <p class="text-center mt-2">PROJECT 1</p>
+              <hr class="mx-auto w-[269px] h-[3px] bg-black mt-2">
+          </div>
+          <!-- project 1 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="project-1-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    I made this using Boostrap and also HTML. This website is a training website whose contents are a package tour
+                  </p>
+                  <a href="https://muhammadzidanerizkiqo.kodeintekno.com/tugas-bostrep-1/">
+                    <button class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition duration-300">
+                      SEE HERE 
+                   </button>
+                  </a>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/project-1-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="m-10 project-card relative" id="project-2">
+              <img src="/img/project-2.png" class="w-[366.21px] h-[350px] rounded-[57px] shadow-lg project-image" alt="Project 2">
+              <p class="text-center mt-2">PROJECT 2</p>
+              <hr class="mx-auto w-[269px] h-[3px] bg-black mt-2">
+          </div>
+          <!-- project 2 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10" id="project-2-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    I made this using HTML and Boostrap, where this website contains information about books that can be ordered via this website.
+                  </p>
+                  <a href="https://muhammadzidanerizkiqo.kodeintekno.com/pekanan-4/">
+                    <button class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition duration-300">
+                      SEE HERE 
+                   </button>
+                  </a>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/project-2-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="m-10 project-card relative" id="project-3">
+              <img src="/img/project-3.png" class="w-[366.21px] h-[350px] rounded-[57px] shadow-lg project-image" alt="Project 3">
+              <p class="text-center mt-2">PROJECT 3</p>
+              <hr class="mx-auto w-[269px] h-[3px] bg-black mt-2">
+          </div>
+          <!-- project 3 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10" id="project-3-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                     
+I made this using html and tailwind csss to make it easier with a little touch of javascript this web contains about adoption
+                  </p>
+                  <a href="https://ujian-mu.vercel.app/index.html">
+                    <button class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition duration-300">
+                      SEE HERE 
+                   </button>
+                  </a>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/project-3-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="m-10 project-card relative" id="project-4">
+              <img src="/img/project-4.png" class="w-[366.21px] h-[350px] rounded-[57px] shadow-lg project-image" alt="Project 4">
+              <p class="text-center mt-2">PROJECT 4</p>
+              <hr class="mx-auto w-[269px] h-[3px] bg-black mt-2">
+          </div>
+          <!-- project 4 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10" id="project-4-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                     
+This is a challenge from my teacher to create a website using Boostrap
+                  </p>
+                  <a href="https://muhammadzidanerizkiqo.kodeintekno.com/tugas-pertemuan-25/ ">
+                    <button class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition duration-300">
+                      SEE HERE 
+                   </button>
+                  </a>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/project-4-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="m-10 project-card relative" id="project-5">
+              <img src="/img/project-5png.png" class="w-[366.21px] h-[350px] rounded-[57px] shadow-lg project-image" alt="Project 5">
+              <p class="text-center mt-2">PROJECT 5</p>
+              <hr class="mx-auto w-[269px] h-[3px] bg-black mt-2">
+            </div>
+            <!-- project 5 popup -->
+             <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10" id="project-5-popup">
+               <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+                 <!-- Left Section -->
+                 <div class="flex flex-col justify-center space-y-6 w-1/2">
+                     <p class="text-xl leading-relaxed">
+                         I USE HTML AND VANILLA CSS TO CREATE AN INTERACTIVE AND RESPONSIVE WEBSITE. 
+                         THIS IS MY 3RD WEEKLY ASSIGNMENT, WANT TO SEE IT?
+                     </p>
+                     <a href="https://muhammadzidanerizkiqo.kodeintekno.com/pekanan-3/">
+                       <button class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition duration-300">
+                         SEE HERE 
+                      </button>
+                     </a>
+                 </div>
+                 
+                 <!-- Right Section -->
+                 <div class="flex  justify-end ">
+                     <img src="/img/project-5-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+                 </div>
+             </div>
+             </div>
+          <!-- Project 6 -->
+          <div class="m-10 project-card relative" id="project-6">
+              <img src="/img/project-6.png" class="w-[366.21px] h-[350px] rounded-[57px] shadow-lg project-image" alt="Project 6">
+              <p class="text-center mt-2">PROJECT 6</p>
+              <hr class="mx-auto w-[269px] h-[3px] bg-black mt-2">
+          </div>
+           <!-- project 6 popup -->
+           <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10" id="project-6-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    This is a website using html and vanilla CSS. This website works for logging in
+                  </p>
+                  <a href="https://muhammadzidanerizkiqo.kodeintekno.com/pekanan-2/">
+                    <button class="bg-black text-white px-8 py-3 rounded-full text-lg hover:bg-gray-800 transition duration-300">
+                      SEE HERE 
+                   </button>
+                  </a>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/project-6-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+          
+      </div>
+  </div>
+        <div id="mummet-showcase" class="hidden">
+          <div class="masonry px-[62px] mx-auto relative">
+            <!-- Masonry item 1 -->
+            <img src="/img/multimedia-vespa.png" id="multimedia-1" class="masonry-item rounded-[26px] w-full object-cover relative" alt="Image 1">
+            <!-- project 1 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-1-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    I made this using Photoshop to make a building into the number 78
+                  </p>
+                  
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/multimedia-vespa.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 2 -->
+            <img src="/img/multimedia-moto-gp.png" id="multimedia-2" class="masonry-item rounded-[26px] w-full object-cover relative" alt="Image 2">
+            <!-- multimesia 2 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-2-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    
+This is a lesson in making a sadow to make the image realistic
+                  </p>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/motor.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 3 -->
+            <img src="/img/multimedia-dakwah.png" id="multimedia-3" class="masonry-item rounded-[26px] w-full h-[373px] object-cover relative" alt="Image 3">
+            <!-- project 3 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-3-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                      
+This is a poster about da'wah that I made using Illustrator
+                  </p>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/dakwah-zoom.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 4 -->
+            <img src="/img/multimedia-gohyang.png" id="multimedia-4" class="masonry-item rounded-[26px] w-full object-cover relative" alt="Image 4">
+            <!-- project 4 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-4-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                      gohyang is a delicious food you may try it, im using ilustrator to make this logo
+                  </p>
+                  
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/gohyang.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 5 -->
+            <img src="/img/multimedia-vespa-2.png" id="multimedia-5" class="masonry-item rounded-[26px] w-full object-cover relative" alt="Image 5">
+            <!-- project 5 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-5-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                      
+Vespa is a famous brand and I tried to make a promotional poster for it
+                  </p>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/vespa-2.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 6 -->
+            <img src="/img/figma-1.png" id="multimedia-6" class="masonry-item rounded-[26px] w-full h-[432px] object-cover relative" alt="Image 6">
+            <!-- project 6 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-6-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                      
+
+                    this is my portfolio website that I made and you can see me this is actually my second portfolio website for my portfolio website will be ready in 1 month
+                  </p>
+                  
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/figma-1.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 7 -->
+            <img src="/img/figma-2.png" id="multimedia-7" class="masonry-item rounded-[26px] w-full object-cover relative" alt="Image 7">
+            <!-- project 7 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-7-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    I created a cool UI/UX login page and also banking UI/UX
+                  </p>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/figma-2.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 8 -->
+            <img src="/img/figma-3.png" id="multimedia-8" class="masonry-item rounded-[26px] w-full object-cover relative" alt="Image 8">
+            <!-- project 8 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-8-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    This is my first UI UX, at that time we were all asked to make a stranded frame for coffee beans.
+                  </p>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/figma-3.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 9 -->
+            <img src="/img/figma-4.png" id="multimedia-9" class="masonry-item rounded-[26px] w-full h-[480px] object-cover relative" alt="Image 9">
+            <!-- project 9 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-9-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                      
+This is my first UI UX project, which is the Kosein School PPDB website. I can't give you the URL yet because this project is still ongoing.
+                  </p>
+                  
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/figma-4.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            
+            <!-- Masonry item 10 -->
+            <img src="/img/video-open.png" id="multimedia-10" class="masonry-item rounded-[26px] w-full h-[432px] object-cover relative" alt="Image 10">
+            <!-- project 10 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-10-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                     im sorry the video haven uploaded in this page 
+                  </p>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/project-1-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+            <!-- Masonry item 11 -->
+            <img src="/img/video-bg-2.png" id="multimedia-11" class="masonry-item rounded-[26px] w-full h-[241px] object-cover relative" alt="Image 11">
+            <!-- project 11 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-11-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                    im sorry the video haven uploaded in this page 
+                  </p>
+                  
+                  </a>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/video-bg-2.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+             
+            <!-- Masonry item 12 -->
+            <img src="/img/video-bg-3.png" id="multimedi-12" class="masonry-item rounded-[26px] w-full h-[587px] object-cover relative" alt="Image 12">
+            <!-- project 12 popup -->
+          <div class="absolute inset-0 hidden justify-center items-center backdrop-blur-lg z-10 " id="multimedia-12-popup">
+            <div class="bg-white w-[1000px] h-[606px] shadow-lg p-10 space-x-8 rounded-[57px] flex">
+              <!-- Left Section -->
+              <div class="flex flex-col justify-center space-y-6 w-1/2">
+                  <p class="text-xl leading-relaxed">
+                      im sorry the video haven uploaded in this page 
+                  </p>
+              </div>
+              
+              <!-- Right Section -->
+              <div class="flex  justify-end ">
+                  <img src="/img/project-1-isi.png" alt="Truck Image" class="rounded-r-[57px] h-[517px]">
+              </div>
+          </div>
+          </div>
+          </div>
+        
+        </div>
+
+    <script>
+          const programmingButton = document.getElementById("programmingButton");
+          const multimediaButton = document.getElementById("multimediaButton");
+          const programmingIcon = document.getElementById("programmingIcon");
+          const multimediaIcon = document.getElementById("multimediaIcon");
+
+          const programming = document.getElementById("isi-programming");
+          const multimedia = document.getElementById("mummet-showcase");
+
+          programmingButton.addEventListener("click", () => {
+            programmingButton.classList.remove("bg-white", "text-black");
+            programmingButton.classList.add("bg-black", "text-white");
+            programmingIcon.classList.remove("icon-default");
+            programmingIcon.classList.add("icon-active");
+    
+            multimediaButton.classList.remove("bg-black", "text-white");
+            multimediaIcon.classList.remove("icon-active");
+            multimediaButton.classList.add("bg-white", "text-black");
+            multimediaIcon.classList.add("icon-default");
+
+            programming.classList.remove("hidden")
+            multimedia.classList.add("hidden");
+          });
+          
+          multimediaButton.addEventListener("click", () => {
+            multimediaButton.classList.remove("bg-white", "text-black");
+            multimediaButton.classList.add("bg-black", "text-white");
+            multimediaIcon.classList.remove("icon-default");
+            multimediaIcon.classList.add("icon-active");
+            
+            programmingButton.classList.remove("bg-black", "text-white");
+            programmingIcon.classList.remove("icon-active");
+            programmingButton.classList.add("bg-white", "text-black");
+            programmingIcon.classList.add("icon-default");
+
+            multimedia.classList.remove("hidden")
+            programming.classList.add("hidden");
+          });
+          
+          
+          
+          function toggleProject(projectPopup) {
+            projectPopup.classList.toggle("hidden");
+            projectPopup.classList.toggle("flex");
+          }
+
+          // project 1
+          const project1 = document.querySelector("#project-1");
+          const project1Popup = document.querySelector("#project-1-popup");
+          project1.addEventListener("click", () => {
+            toggleProject(project1Popup);
+          })
+          project1Popup.addEventListener("click", () => {
+            toggleProject(project1Popup);
+          })
+
+          // project 2
+          const project2 = document.querySelector("#project-2");
+          const project2Popup = document.querySelector("#project-2-popup");
+          project2.addEventListener("click", () => {
+            toggleProject(project2Popup);
+          })
+          project2Popup.addEventListener("click", () => {
+            toggleProject(project2Popup);
+          })
+
+          // project 3
+          const project3 = document.querySelector("#project-3");
+          const project3Popup = document.querySelector("#project-3-popup");
+          project3.addEventListener("click", () => {
+            toggleProject(project3Popup);
+          })
+          project3Popup.addEventListener("click", () => {
+            toggleProject(project3Popup);
+          })
+
+          // project 4
+          const project4 = document.querySelector("#project-4");
+          const project4Popup = document.querySelector("#project-4-popup");
+          project4.addEventListener("click", () => {
+            toggleProject(project4Popup);
+          })
+          project4Popup.addEventListener("click", () => {
+            toggleProject(project4Popup);
+          })
+
+           // project 5
+          const project5 = document.querySelector("#project-5");
+          const project5Popup = document.querySelector("#project-5-popup");
+          project5.addEventListener("click", () => {
+            toggleProject(project5Popup);
+          })
+          project5Popup.addEventListener("click", () => {
+            toggleProject(project5Popup);
+          })
+
+          // project 6
+          const project6 = document.querySelector("#project-6");
+          const project6Popup = document.querySelector("#project-6-popup");
+          project6.addEventListener("click", () => {
+            toggleProject(project6Popup);
+          })
+          project6Popup.addEventListener("click", () => {
+            toggleProject(project6Popup);
+          })
+
+          // multimedia 1
+          const multimedia1 = document.querySelector("#multimedia-1");
+          const multimedia1popup = document.querySelector("#multimedia-1-popup");
+          multimedia1.addEventListener("click", () => {
+            toggleProject(multimedia1popup);
+          })
+          multimedia1popup.addEventListener("click", () => {
+            toggleProject(multimedia1popup);
+          })
+
+          
+          // multimedia 2
+          const multimedia2 = document.querySelector("#multimedia-2");
+          const multimedia2popup = document.querySelector("#multimedia-2-popup");
+          multimedia2.addEventListener("click", () => {
+            toggleProject(multimedia2popup);
+          })
+          multimedia2popup.addEventListener("click", () => {
+            toggleProject(multimedia2popup);
+          })
+
+          // multimedia 3
+          const multimedia3 = document.querySelector("#multimedia-3");
+          const multimedia3popup = document.querySelector("#multimedia-3-popup");
+          multimedia3.addEventListener("click", () => {
+            toggleProject(multimedia3popup);
+          })
+          multimedia3popup.addEventListener("click", () => {
+            toggleProject(multimedia3popup);
+          })
+
+          // multimedia 4
+          const multimedia4 = document.querySelector("#multimedia-4");
+          const multimedia4popup = document.querySelector("#multimedia-4-popup");
+          multimedia4.addEventListener("click", () => {
+            toggleProject(multimedia4popup);
+          })
+          multimedia4popup.addEventListener("click", () => {
+            toggleProject(multimedia4popup);
+          })
+
+          // multimedia 5
+          const multimedia5 = document.querySelector("#multimedia-5");
+          const multimedia5popup = document.querySelector("#multimedia-5-popup");
+          multimedia5.addEventListener("click", () => {
+            toggleProject(multimedia5popup);
+          })
+          multimedia5popup.addEventListener("click", () => {
+            toggleProject(multimedia5popup);
+          })
+
+          // multimedia 6
+          const multimedia6 = document.querySelector("#multimedia-6");
+          const multimedia6popup = document.querySelector("#multimedia-6-popup");
+          multimedia6.addEventListener("click", () => {
+            toggleProject(multimedia6popup);
+          })
+          multimedia6popup.addEventListener("click", () => {
+            toggleProject(multimedia6popup);
+          })
+
+          // multimedia 7
+          const multimedia7 = document.querySelector("#multimedia-7");
+          const multimedia7popup = document.querySelector("#multimedia-7-popup");
+          multimedia7.addEventListener("click", () => {
+            toggleProject(multimedia7popup);
+          })
+          multimedia7popup.addEventListener("click", () => {
+            toggleProject(multimedia7popup);
+          })
+
+          // multimedia 8
+          const multimedia8 = document.querySelector("#multimedia-8");
+          const multimedia8popup = document.querySelector("#multimedia-8-popup");
+          multimedia8.addEventListener("click", () => {
+            toggleProject(multimedia8popup);
+          })
+          multimedia8popup.addEventListener("click", () => {
+            toggleProject(multimedia8popup);
+          })
+
+          // multimedia 9
+          const multimedia9 = document.querySelector("#multimedia-9");
+          const multimedia9popup = document.querySelector("#multimedia-9-popup");
+          multimedia9.addEventListener("click", () => {
+            toggleProject(multimedia9popup);
+          })
+          multimedia9popup.addEventListener("click", () => {
+            toggleProject(multimedia9popup);
+          })
+
+          // multimedia 10
+          const multimedia10 = document.querySelector("#multimedia-10");
+          const multimedia10popup = document.querySelector("#multimedia-10-popup");
+          multimedia10.addEventListener("click", () => {
+            toggleProject(multimedia10popup);
+          })
+          multimedia10popup.addEventListener("click", () => {
+            toggleProject(multimedia10popup);
+          })
+
+          // multimedia 11
+          const multimedia11 = document.querySelector("#multimedia-11");
+          const multimedia11popup = document.querySelector("#multimedia-11-popup");
+          multimedia11.addEventListener("click", () => {
+            toggleProject(multimedia11popup);
+          })
+          multimedia11popup.addEventListener("click", () => {
+            toggleProject(multimedia11popup);
+          })
+
+          // multimedia 12
+          const multimedia12 = document.querySelector("#multimedia-12");
+          const multimedia12popup = document.querySelector("#multimedia-12-popup");
+          multimedia12.addEventListener("click", () => {
+            toggleProject(multimedia12popup);
+          })
+          multimedia12popup.addEventListener("click", () => {
+            toggleProject(multimedia12popup);
+          })
+  </script>
+  </body>
+</html>
