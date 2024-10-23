@@ -22,96 +22,100 @@ import Footer from "../components/footer.astro"
   </head>
   <body class="bg-[#FBFBFB]">
     <Navbar />
-<div class="grid grid-cols-[repeat(3,fit-content())] gap-x-12 grid-rows-[repeat(4,fit-content())] max-w-[900px] mx-auto">
-    <section id="click-about" class=" flex items-center justify-center mt-40 col-span-3">
-      <!-- Card Section -->
-   <div class="cursor-pointer ">
-     <div class="card flex flex-row gap-[170px]  bg-white shadow-lg rounded-[57px] overflow-hidden  w-full" >
-         <!-- Left Section (Text) -->
-         <div class="flex-1 font-['Aboreto'] px-10 py-5 pt-40">
-             <h1 class=" font-bold text-[48px]"> Zidane Rizkiqo</h1>
-             <p class="mt-4 text-lg">WELCOME TO MY WORKSPACES</p>
-             <p class="mt-4 text-lg font-semibold">HAVE FUN</p>
-         </div>
-         <!-- Right Section (Image) -->
-         <div class="flex-1">
-             <img src="/img/luffy.png" alt="Workspace Image" class="py-5 px-5  object-cover">
-         </div>
-     </div>
- </div>
-   </section>
-
-   <div id="volume" class="flex space-x-4 mt-10 mb-10 row-span-2"> 
-    <!-- Tombol 1 -->
-    <div class="relative w-[104px] h-[382px]  rounded-[32px] overflow-hidden shadow-lg ">
-        <div class="absolute top-0 w-full h-1/2  flex justify-center items-center bg-white rounded-t-[32px]">   
-        </div> 
-        <div class="absolute bottom-0 w-full h-[70%] bg-black  rounded-b-[32px] items-center justify-center flex">
-          <img src="/img/programing-white-icon.png" alt="Instagram" class="w-16 h-16">
+<div class="grid grid-cols-1 lg:grid-cols-[repeat(3,fit-content())] gap-x-12 lg:grid-rows-[repeat(4,fit-content())] max-w-[900px] mx-auto">
+  <section id="click-about" class="flex items-center justify-center mt-40 lg:col-span-3">
+    <!-- Card Section -->
+    <div class="cursor-pointer w-full max-w-7xl mx-auto">
+      <div class="card flex flex-col md:flex-row gap-10 md:gap-[170px] bg-white shadow-lg rounded-[57px] overflow-hidden w-full">
+        <!-- Left Section (Text) -->
+        <div class="flex-1 font-['Aboreto'] px-5 py-5 md:px-10 md:py-5 md:pt-40 text-center md:text-left">
+          <h1 class="font-bold text-3xl md:text-[48px]">Zidane Rizkiqo</h1>
+          <p class="mt-4 text-base md:text-lg">WELCOME TO MY WORKSPACES</p>
+          <p class="mt-4 text-base md:text-lg font-semibold">HAVE FUN</p>
         </div>
+        <!-- Right Section (Image) -->
+        <div class="flex-1">
+          <img src="/img/luffy.png" alt="Workspace Image" class="py-5 px-5 object-cover mx-auto md:mx-0">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <div id="volume" class="flex gap-4 md:space-y-0 md:space-x-4 mt-10 mb-10 lg:row-span-2 justify-center items-center">
+    <!-- Tombol 1 -->
+    <div class="relative w-[104px] h-[250px] sm:h-[300px] md:h-[382px] rounded-[32px] overflow-hidden shadow-lg">
+      <div class="absolute top-0 w-full h-1/2 flex justify-center items-center bg-white rounded-t-[32px]">
+      </div>
+      <div class="absolute bottom-0 w-full h-[70%] bg-black rounded-b-[32px] items-center justify-center flex">
+        <img src="/img/programing-white-icon.png" alt="Programming Icon" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+      </div>
     </div>
     <!-- Tombol 2 -->
-    <div class="relative w-[104px] h-[382px]  rounded-[32px] overflow-hidden">
-        <div class="absolute top-0 w-full h-1/2  flex justify-center items-center bg-white  rounded-t-[32px] ">
-        </div>
-        <div class="absolute bottom-0 w-full h-[55%] bg-black  rounded-b-[32px] items-center justify-center flex">
-          <img src="/img/multimedia-white-icon.png" alt="Instagram" class="w-16 h-16">
-        </div>
+    <div class="relative w-[104px] h-[250px] sm:h-[300px] md:h-[382px] rounded-[32px] overflow-hidden shadow-lg">
+      <div class="absolute top-0 w-full h-1/2 flex justify-center items-center bg-white rounded-t-[32px]">
+      </div>
+      <div class="absolute bottom-0 w-full h-[55%] bg-black rounded-b-[32px] items-center justify-center flex">
+        <img src="/img/multimedia-white-icon.png" alt="Multimedia Icon" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+      </div>
     </div>
-</div>
+  </div>
+  
 
-   <div id="informasi" class="flex-1 flex flex-col space-y-4 mt-10 col-span-2">
+
+  <div id="informasi" class="flex-1 flex flex-col space-y-4 mt-10 lg:col-span-2">
     <!-- Background Pendidikan -->
-    <div class=" bg-white p-4 rounded-r-[57px] rounded-tl-[57px] shadow-md space-x-4 h-[133px]  flex justify-center items-center"> 
-      <svg width="90" height="94" viewBox="0 0 90 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="bg-white p-4 rounded-r-[57px] rounded-tl-[57px] shadow-md space-x-4 h-[120px] sm:h-[133px] flex justify-start sm:justify-center items-center">
+      <svg class="w-14 sm:w-20 h-auto" viewBox="0 0 90 94" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M35.55 13.5859C29.199 10.4189 20.3221 8.86752 8.43751 8.81244C7.31667 8.79653 6.21783 9.13789 5.28751 9.79099C4.52389 10.3301 3.89881 11.0569 3.46724 11.9075C3.03567 12.7581 2.81083 13.7064 2.81251 14.6691V67.1953C2.81251 70.746 5.23126 73.4246 8.43751 73.4246C20.9303 73.4246 33.4617 74.6436 40.9676 82.0535C41.0703 82.1553 41.1993 82.2234 41.3387 82.2493C41.4781 82.2751 41.6218 82.2576 41.7517 82.1989C41.8817 82.1403 41.9923 82.043 42.0698 81.9192C42.1472 81.7954 42.1882 81.6506 42.1875 81.5027V19.6114C42.1877 19.1939 42.1021 18.7811 41.9366 18.4011C41.771 18.021 41.5293 17.6825 41.2277 17.4083C39.5084 15.8732 37.5986 14.5874 35.55 13.5859ZM84.7125 9.78549C83.7817 9.13401 82.6828 8.79456 81.5625 8.81244C69.6779 8.86752 60.801 10.4115 54.45 13.5859C52.4015 14.5856 50.4912 15.8688 48.7705 17.401C48.4696 17.6755 48.2284 18.0142 48.0631 18.3942C47.8979 18.7742 47.8124 19.1867 47.8125 19.6041V81.499C47.8124 81.6412 47.8525 81.7801 47.9278 81.8985C48.003 82.0169 48.1101 82.1095 48.2355 82.1646C48.3609 82.2197 48.4991 82.2349 48.6327 82.2082C48.7664 82.1816 48.8895 82.1144 48.9867 82.0149C53.499 77.3333 61.418 73.4191 81.5695 73.4209C83.0614 73.4209 84.4921 72.8019 85.547 71.7002C86.6019 70.5984 87.1945 69.1041 87.1945 67.5459V14.6709C87.1966 13.7064 86.9712 12.7561 86.5384 11.9041C86.1055 11.052 85.4784 10.3244 84.7125 9.78549Z" fill="#969696"/>
-        </svg>
-        <p class="text-[#909090] text-[32px]">educational background</p>
+      </svg>
+      <p class="text-[#909090] text-lg sm:text-[32px]">educational background</p>
     </div>
     <!-- Pengalaman Kerja -->
-    <div class=" bg-white p-4 rounded-r-[57px] rounded-tl-[57px] shadow-md space-x-4 h-[133px] flex justify-center items-center"> 
-      <svg width="100" height="89" viewBox="0 0 100 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="bg-white p-4 rounded-r-[57px] rounded-tl-[57px] shadow-md space-x-4 h-[120px] sm:h-[133px] flex justify-start sm:justify-center items-center">
+      <svg class="w-14 sm:w-20 h-auto" viewBox="0 0 100 89" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M83.334 22.2501H66.6673V14.8334C66.6673 10.7172 62.959 7.41675 58.334 7.41675H41.6673C37.0423 7.41675 33.334 10.7172 33.334 14.8334V22.2501H16.6673C12.0423 22.2501 8.37565 25.5505 8.37565 29.6667L8.33398 70.4584C8.33398 74.5747 12.0423 77.8751 16.6673 77.8751H83.334C87.959 77.8751 91.6673 74.5747 91.6673 70.4584V29.6667C91.6673 25.5505 87.959 22.2501 83.334 22.2501ZM58.334 22.2501H41.6673V14.8334H58.334V22.2501Z" fill="#969696"/>
-        </svg>
-        
-        <p class="text-[#909090] text-[32px]">work experience</p>
-    </div>
-</div>
-
-
-<div id="challenge" class="col-span-2 row-start-4">
-<div class="bg-red-600 text-white font-bold text-lg  rounded-t-[57px] rounded-bl-[57px] shadow-lg w-[559px] h-[260px] text-[32px] pt-[18px] flex items-center justify-center">
-  <p class="text-[32px]">
-    I am ready to accept your challenge.
-  </p>
-</div>
-</div>
-
-<div id="contact" class="row-span-2">
-<div class="bg-gray-200 w-[363px] h-[363px] p-4 rounded-t-[57px] rounded-br-[57px] grid grid-cols-2 gap-4 place-items-center mt-10">
-  <!-- Instagram Icon -->
-  <div class="bg-white rounded-full w-[120px] h-[120px]  flex items-center justify-center">
-    <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1 0C14.7691 0 9.65664 2.11767 5.88715 5.88715C2.11767 9.65664 0 14.7691 0 20.1L0 46.9C0 52.2309 2.11767 57.3434 5.88715 61.1128C9.65664 64.8823 14.7691 67 20.1 67H46.9C52.2309 67 57.3434 64.8823 61.1128 61.1128C64.8823 57.3434 67 52.2309 67 46.9V20.1C67 14.7691 64.8823 9.65664 61.1128 5.88715C57.3434 2.11767 52.2309 0 46.9 0L20.1 0ZM17.8667 33.5C17.8667 29.3538 19.5137 25.3774 22.4456 22.4456C25.3774 19.5137 29.3538 17.8667 33.5 17.8667C37.6462 17.8667 41.6226 19.5137 44.5544 22.4456C47.4863 25.3774 49.1333 29.3538 49.1333 33.5C49.1333 37.6462 47.4863 41.6226 44.5544 44.5544C41.6226 47.4863 37.6462 49.1333 33.5 49.1333C29.3538 49.1333 25.3774 47.4863 22.4456 44.5544C19.5137 41.6226 17.8667 37.6462 17.8667 33.5ZM49.1333 17.8667H53.6V13.4H49.1333V17.8667Z" fill="#929292"/>
       </svg>
-      
+      <p class="text-[#909090] text-lg sm:text-[32px]">work experience</p>
+    </div>
   </div>
   
-  <!-- Mail Icon -->
-  <div class="bg-white rounded-full w-[120px] h-[120px] flex items-center justify-center">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-gray-500 w-10 h-10">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9 6 9-6v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
-    </svg>
+
+
+  <div id="challenge" class="lg:col-span-2 lg:row-start-4 flex justify-center mt-8">
+    <div class="bg-red-600 text-white font-bold text-lg rounded-t-[57px] rounded-bl-[57px] shadow-lg w-full max-w-[559px] h-[180px] sm:h-[220px] md:h-[260px] text-center flex items-center justify-center p-4">
+      <p class="text-[20px] sm:text-[28px] md:text-[32px]">
+        I am ready to accept your challenge.
+      </p>
+    </div>
   </div>
   
-  <!-- GitHub Icon -->
-  <div class="col-span-2 bg-white rounded-full w-[120px] h-[120px] flex items-center justify-center">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-gray-500 w-10 h-10">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.683-.217.683-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.455-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.637-1.34-2.22-.252-4.555-1.111-4.555-4.945 0-1.092.39-1.986 1.029-2.684-.103-.253-.446-1.27.097-2.646 0 0 .84-.269 2.75 1.026A9.58 9.58 0 0112 6.845c.85.004 1.705.115 2.504.338 1.91-1.295 2.75-1.026 2.75-1.026.543 1.376.2 2.393.097 2.646.64.698 1.028 1.592 1.028 2.684 0 3.842-2.338 4.687-4.566 4.935.36.31.68.924.68 1.86 0 1.342-.012 2.422-.012 2.752 0 .268.18.579.688.481A9.972 9.972 0 0022 12c0-5.523-4.477-10-10-10z" />
-    </svg>
+
+  <div id="contact" class="lg:row-span-2 flex justify-center mt-10">
+    <div class="bg-gray-200 w-full max-w-[363px] sm:max-w-[480px] md:max-w-[560px] h-auto p-4 rounded-t-[57px] rounded-br-[57px] grid grid-cols-2 gap-4 place-items-center">
+      <!-- Instagram Icon -->
+      <div class="bg-white rounded-full w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] flex items-center justify-center">
+        <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1 0C14.7691 0 9.65664 2.11767 5.88715 5.88715C2.11767 9.65664 0 14.7691 0 20.1L0 46.9C0 52.2309 2.11767 57.3434 5.88715 61.1128C9.65664 64.8823 14.7691 67 20.1 67H46.9C52.2309 67 57.3434 64.8823 61.1128 61.1128C64.8823 57.3434 67 52.2309 67 46.9V20.1C67 14.7691 64.8823 9.65664 61.1128 5.88715C57.3434 2.11767 52.2309 0 46.9 0L20.1 0ZM17.8667 33.5C17.8667 29.3538 19.5137 25.3774 22.4456 22.4456C25.3774 19.5137 29.3538 17.8667 33.5 17.8667C37.6462 17.8667 41.6226 19.5137 44.5544 22.4456C47.4863 25.3774 49.1333 29.3538 49.1333 33.5C49.1333 37.6462 47.4863 41.6226 44.5544 44.5544C41.6226 47.4863 37.6462 49.1333 33.5 49.1333C29.3538 49.1333 25.3774 47.4863 22.4456 44.5544C19.5137 41.6226 17.8667 37.6462 17.8667 33.5ZM49.1333 17.8667H53.6V13.4H49.1333V17.8667Z" fill="#929292"/>
+        </svg>
+      </div>
+  
+      <!-- Mail Icon -->
+      <div class="bg-white rounded-full w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-gray-500 w-8 h-8 sm:w-10 sm:h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9 6 9-6v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+        </svg>
+      </div>
+  
+      <!-- GitHub Icon -->
+      <div class="col-span-2 sm:col-span-3 bg-white rounded-full w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-gray-500 w-8 h-8 sm:w-10 sm:h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.683-.217.683-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.455-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.031 1.531 1.031.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.637-1.34-2.22-.252-4.555-1.111-4.555-4.945 0-1.092.39-1.986 1.029-2.684-.103-.253-.446-1.27.097-2.646 0 0 .84-.269 2.75 1.026A9.58 9.58 0 0112 6.845c.85.004 1.705.115 2.504.338 1.91-1.295 2.75-1.026 2.75-1.026.543 1.376.2 2.393.097 2.646.64.698 1.028 1.592 1.028 2.684 0 3.842-2.338 4.687-4.566 4.935.36.31.68.924.68 1.86 0 1.342-.012 2.422-.012 2.752 0 .268.18.579.688.481A9.972 9.972 0 0022 12c0-5.523-4.477-10-10-10z" />
+        </svg>
+      </div>
+    </div>
   </div>
-</div>
-</div>
+  
 </div>
 
 
